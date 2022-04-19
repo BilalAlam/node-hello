@@ -8,5 +8,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
+  let dateObj = new Date(); 
   console.log(`Server running on http://localhost:${port}/ at ${dateObj}`);
 });
